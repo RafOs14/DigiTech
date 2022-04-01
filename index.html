@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Inicio - DigiTech</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark mb-5">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">DigiTech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" > 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" >Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Productos</a>
+            </li>
+          </ul>
+          <form class="d-flex">            
+            <a class="btn btn-primary m-1" href="register.html" role="button">Registro</a>
+          </form>
+        </div>
+
+    </nav>
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <!--Contenido-->
+            <main>
+                <div class="clearfix mb-4">
+                    <div id="carouselExampleSlidesOnly" class="col-md-6 float-md-end mb-3 ms-md-3 carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/portada.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/portada2.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/portada3.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/portada4.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/portada5.jpg" class="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="m-3">Tecnología para toda la comunidad!</h1>
+                    <p class="m-3">
+                        Para poder comprar, primero debes registrarte y en caso de ya estar
+                        registrado debes iniciar sesión.
+                    </p>
+                    <a class="btn btn-primary m-3" href="login.html" role="button">Inicio de Sesión</a>
+                </div>
+
+                <h3 class="h3 align-self-center">Ofertas del mes.</h3>
+                <table class="table align-self-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio Oferta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ofertas">
+                        
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <!--Fin de Contenido-->
+        <div id="layoutAuthentication_footer">
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; DigiTech 2022</div>
+                        <div>
+                            <!--Boton que abre el modal-->
+                            <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fw-bold" id="exampleModalLabel">Contacto</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-muted">info@digitech.com</p>
+                                            <a href="#" style="text-decoration: none;">+1 123 123123123</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/scriptindex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>        
+    
+</body>
+
+</html>

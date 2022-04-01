@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - DigiTech</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">DigiTech</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">                    
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">                       
+                        <li><a class="dropdown-item" href="index.html">Salir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading"> Menú</div>
+                            <a class="nav-link" href="productos.html">
+                                <div class="sb-nav-link-icon"></div>
+                                <i class="fas fa-shopping-bag"></i> &nbsp; Productos
+                            </a>                                                      
+                            <div class="sb-sidenav-menu-heading"></div>                            
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                
+                            </div>   
+                        </div>
+                    </div>                    
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>                    
+                    <div class="container-fluid px-4">
+                        <h3 class="mt-4">Completa tus datos</h3>                                      
+                    </div>
+                    <!--Contenido-->                                      
+                    <div class="row container-fluid m-auto justify-content-center">
+                        <form class="row g-3" id="formulario">
+                            <div class="col-md-6">
+                              <label for="nombre" class="form-label">Nombre</label>
+                              <input type="name" class="form-control" id="name" required>
+                              <span class="text-danger" id="errorUser"></span>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" required>
+                              <span class="text-danger" id="errorEmail"></span>
+                            </div>
+                            <div class="col-12">
+                              <label for="direccion" class="form-label">Dirección</label>
+                              <input type="text" class="form-control" id="direccion" required>
+                              <span class="text-danger" id="errorDir"></span>
+                            </div>
+                            <div class="col-12">
+                              <label for="tarjeta" class="form-label">Nro. Tarjeta</label>
+                              <input type="text" class="form-control" id="tarjeta" required>
+                              <span class="text-danger" id="errorTar"></span>
+                            </div>
+                            <div class="col-md-5">
+                              <label for="nombre" class="form-label">Nombre de la tarjeta</label>
+                              <input type="name" class="form-control" id="tarjetanom" required>
+                              <span class="text-danger" id="errorNom"></span>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">Financiera</label>
+                              <select id="inputState" class="form-select" required>                                            
+                                <option selected>Master Card</option>
+                                <option>Visa</option>
+                                <option>Oca</option>
+                                <option>American</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="inputSeg" class="form-label">Código seg.</label>
+                              <input type="text" class="form-control" id="codseg" required>
+                              <span class="text-danger" id="errorCod"></span>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">                                            
+                                <label class="form-check-label" for="gridCheck">
+                                  <b>Todos los campos son obligatorios</b>
+                                </label>
+                              </div>
+                            </div> 
+                            <div class="modal-footer">
+                                <a type="button" class="btn btn-danger" href="productos.html">Cancelar</a>                                
+                                <!--<a type="submit" class="btn btn-primary" id="finalizar" href="productos.html" onclick="return validar(this.form)">Finalizar</a>  -->
+                                <button type="submit" class="btn btn-primary btnTerminar">Finalizar</button>                                        
+                            </div>                                       
+                          </form>
+                    </div>
+                    
+                    <!--Fin de Contenido-->
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; DigiTech 2022</div>
+                            <div>
+                                <!--Boton que abre el modal-->
+                                <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title fw-bold" id="exampleModalLabel">Contacto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="text-muted">info@digitech.com</p>
+                                                <a href="#" style="text-decoration: none;">+1 123 123123123</a>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/compras.js"></script>                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>

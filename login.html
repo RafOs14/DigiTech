@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Login - DigiTech</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark mb-5">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="index.html">DigiTech</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Productos</a>
+            </li>
+          </ul>
+          <form class="d-flex">            
+            <a class="btn btn-primary m-1" href="register.html" role="button">Registro</a>
+          </form>
+        </div>
+
+    </nav>
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <!--Fomulario login-->
+
+            <main class="login-form">
+                <div class="cotainer">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header fw-bold ">Inicio de Sesión</div>
+                                <div class="card-body">
+                                    <form id="formulario">
+                                        <div class="form-group mb-3">
+                                            <label for="email">Nombre Usuario *</label>
+                                            <input type="name" class="form-control" id="user"
+                                                placeholder="Nombre Usuario">
+                                            <span class="text-danger" id="errorUser"></span>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="email">Correo Electrónico *</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                                            <span class="text-danger" id="errorEmail"></span>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="contrasena">Contraseña *</label>
+                                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                                            <span class="text-danger" id="errorContrasena"></span>
+                                        </div>
+                                        <div class="col-md-1 offset-md-0" id="ingresar">
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="justify-content-center" id="mensaje"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        </main>
+    </div>
+    <div id="layoutAuthentication_footer">
+      <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; DigiTech 2022</div>
+                <div>
+                    <!--Boton que abre el modal-->
+                    <a href=" " data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Contacto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-muted">info@digitech.com</p>
+                                    <a href="#" style="text-decoration: none;">+1 123 123123123</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/login.js"></script>    
+</body
+
+</html>
