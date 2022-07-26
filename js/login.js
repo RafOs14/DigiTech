@@ -45,7 +45,7 @@ formulario.addEventListener("submit", (e) => {
 
   //Valido que el usuario exista en la coleccion de usuarios
   if (!users.some((usuarioEnArray) => usuarioEnArray.email === email)) {
-    if(!users.some((usuarioEnArray) => usuarioEnArray.password === password)){
+    if(!users.some((usuarioEnArray) => usuarioEnArray.contrasena === contrasena)){
       //si no existe, muestra un mensaje de error
       Toastify({
         text: "El usuario no existe",            
